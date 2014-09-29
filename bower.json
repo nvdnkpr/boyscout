@@ -1,7 +1,7 @@
 {
-  "name": "ng-boilerplate",
-  "version": "1.1.0",
-  "homepage": "http://github.com/ianwalter/ng-boilerplate",
+  "name": "boyscout",
+  "version": "0.0.1",
+  "homepage": "http://github.com/ianwalter/boyscout",
   "main": "index.html",
   "authors": [
     "Ian Kennington Walter (http://ianvonwalter.com)"

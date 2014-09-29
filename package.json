@@ -1,11 +1,8 @@
 {
-  "name": "ng-boilerplate",
-  "version": "1.1.0",
-  "description": "A base for front-end development with AngularJS",
+  "name": "boyscout",
+  "version": "0.0.1",
+  "description": "",
   "main": "index.html",
-  "scripts": {
-    "test": "gulp test"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/ianwalter/ng-boilerplate.git"
