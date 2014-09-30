@@ -1,0 +1,17 @@
+@import '../color';
+
+@mixin underline($color: $blue, $line-offset: 1.1999, $line-size: 0.14999) {
+  @include linear-gradient(top, transparent 50%, $color 50%);
+  background-repeat: repeat-x;
+  background-size: #{$line-size}rem #{$line-size}rem;
+  background-position: 0 #{$line-offset}rem !important;
+  text-decoration: none;
+  .lt-ie10 & { // because old IE can't handle it
+    background: none;
+    text-decoration: underline;
+  }
+}
+
+.underline-blue {
+  @include underline();
+}

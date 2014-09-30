@@ -15,6 +15,7 @@
 @import 'type/size';
 @import 'type/weight';
 @import 'type/whitespace';
+@import 'type/underline';
 
 // Layout
 @import 'layout/display';
@@ -32,3 +33,4 @@
 @import 'component/grid';
 @import 'component/list';
 @import 'component/panel';
+@import 'component/breadcrumbs';

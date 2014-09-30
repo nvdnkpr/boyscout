@@ -1,0 +1,11 @@
+a {
+  color: $blue;
+}
+a:hover {
+  color: $black;
+  @include underline($black);
+}
+a:active {
+  color: $alizarin;
+  @include underline($alizarin);
+}

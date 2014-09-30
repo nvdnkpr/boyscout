@@ -3,10 +3,14 @@
 // Base
 @import '../../base';
 
+body {
+  color: $dove-gray;
+}
 h1, h2, h3, h4, h5, h6, body {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
+  color: $mine-shaft;
   font-weight: 400;
   font-family: 'Bitter', Serif;
 }
