@@ -10,6 +10,7 @@
 @import 'type/case';
 @import 'type/color';
 @import 'type/family';
+@import 'type/line-height';
 @import 'type/overflow';
 @import 'type/size';
 @import 'type/weight';
@@ -22,6 +23,7 @@
 @import 'layout/padding';
 @import 'layout/position';
 @import 'layout/vertical-alignment';
+@import 'layout/height';
 
 // Form
 @import 'form/text';
@@ -29,3 +31,4 @@
 // Component
 @import 'component/grid';
 @import 'component/list';
+@import 'component/panel';
