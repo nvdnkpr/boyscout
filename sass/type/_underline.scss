@@ -12,6 +12,123 @@
   }
 }
 
+.underline-black {
+  @include underline($black);
+}
+.underline-navy {
+  @include underline($navy);
+}
+.underline-midnight-blue {
+  @include underline($midnight-blue);
+}
+.underline-wet-asphalt {
+  @include underline($wet-asphalt);
+}
 .underline-blue {
-  @include underline();
+  @include underline($blue);
+}
+.underline-belize-hole {
+  @include underline($belize-hole);
+}
+.underline-peter-river {
+  @include underline($peter-river);
+}
+.underline-aqua {
+  @include underline($aqua);
+}
+.underline-nephritis {
+  @include underline($nephritis);
+}
+.underline-olive {
+  @include underline($olive);
+}
+.underline-green {
+  @include underline($green);
+}
+.underline-emerald {
+  @include underline($emerald);
+}
+.underline-lime {
+  @include underline($lime);
+}
+.underline-turquoise {
+  @include underline($turquoise);
+}
+.underline-green-sea {
+  @include underline($green-sea);
+}
+.underline-teal {
+  @include underline($teal);
+}
+.underline-wisteria {
+  @include underline($wisteria);
+}
+.underline-amethyst {
+  @include underline($amethyst);
+}
+.underline-purple {
+  @include underline($purple);
+}
+.underline-fuchsia {
+  @include underline($fuchsia);
+}
+.underline-maroon {
+  @include underline($maroon);
+}
+.underline-pomegranate {
+  @include underline($pomegranate);
+}
+.underline-alizarin {
+  @include underline($alizarin);
+}
+.underline-red {
+  @include underline($red);
+}
+.underline-pumpkin {
+  @include underline($pumpkin);
+}
+.underline-carrot {
+  @include underline($carrot);
+}
+.underline-orange {
+  @include underline($orange);
+}
+.underline-buttercup {
+  @include underline($buttercup);
+}
+.underline-sun-flower {
+  @include underline($sun-flower);
+}
+.underline-yellow {
+  @include underline($yellow);
+}
+.underline-mine-shaft {
+  @include underline($mine-shaft);
+}
+.underline-dove-gray {
+  @include underline($dove-gray);
+}
+.underline-boulder {
+  @include underline($boulder);
+}
+.underline-asbestos {
+  @include underline($asbestos);
+}
+.underline-concrete {
+  @include underline($concrete);
+}
+.underline-gray {
+  @include underline($gray);
+}
+.underline-silver-sand {
+  @include underline($silver-sand);
+}
+.underline-silver {
+  @include underline($silver);
+}
+.underline-clouds {
+  @include underline($clouds);
+}
+.underline-white {
+  @include underline($white);
 }

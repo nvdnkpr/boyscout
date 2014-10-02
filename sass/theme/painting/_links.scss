@@ -3,9 +3,11 @@ a {
 }
 a:hover {
   color: $black;
+}
+a.underline-blue:hover {
   @include underline($black);
 }
-a:active {
+a.underline-blue:active {
   color: $alizarin;
   @include underline($alizarin);
 }
