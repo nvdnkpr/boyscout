@@ -41,8 +41,9 @@
     }
   }
   &:last-child {
-    background: $clouds;
+    background: $gallery;
     padding-left: 15px;
+    padding-right: 15px;
     margin-left: 15px;
     border-radius: 0 3px 3px 0;
     cursor: default;
@@ -52,8 +53,8 @@
     }
     &:before {
       border-left: 15px solid transparent;
-      border-top: 20px solid $clouds;
-      border-bottom: 20px solid $clouds;
+      border-top: 20px solid $gallery;
+      border-bottom: 20px solid $gallery;
     }
   }
   &:hover {
@@ -71,10 +72,10 @@
     }
     &:last-child {
       color: $dove-gray;
-      background-color: $clouds;
+      background-color: $gallery;
       &:before {
-        border-top: 20px solid $clouds;
-        border-bottom: 20px solid $clouds;
+        border-top: 20px solid $gallery;
+        border-bottom: 20px solid $gallery;
       }
     }
   }

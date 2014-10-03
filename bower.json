@@ -9,7 +9,11 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "node_modules"
+    "node_modules",
+    "index.html",
+    "gulpfile.js",
+    "package.json",
+    "examples"
   ],
   "dependencies": {},
   "resolutions": {

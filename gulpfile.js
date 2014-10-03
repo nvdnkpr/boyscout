@@ -1,26 +1,32 @@
-var path = require('path'),
-    gulp = require('gulp'),
+var gulp = require('gulp'),
     connect = require('gulp-connect'),
     minifyCSS = require('gulp-minify-css'),
+    rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     debug = false;
 
 gulp.task('css', function() {
   var options = {
-    errLogToConsole: true
+    errLogToConsole: true,
+    sourceComments: 'map'
   };
-  if (!debug) {
+  if (debug) {
     options.outputStyle = 'expanded';
-    options.sourceComments = 'map';
   }
-  var cssTask = gulp.src([
-    'sass/base.scss',
-    'sass/theme/painting/styles.scss'
-  ], { base: 'sass' }).pipe(sass(options));
+  var cssTask = gulp.src(
+    [
+      'sass/base.scss',
+      'sass/theme/painting/styles.scss'
+    ],
+    { base: 'sass' })
+    .pipe(sass(options))
+    .pipe(gulp.dest('dist'));
   if (!debug) {
+    console.log('test');
     cssTask.pipe(minifyCSS());
   }
   cssTask
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('dist'))
     .pipe(connect.reload());
 });
