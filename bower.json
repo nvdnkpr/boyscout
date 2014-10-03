@@ -1,6 +1,14 @@
 {
   "name": "boyscout",
   "version": "0.0.1",
+  "description": "A collection of helper CSS classes so you'll always be prepared.",
+  "keywords": [
+    "css",
+    "framework",
+    "helper",
+    "classes",
+    "grid"
+  ],
   "homepage": "http://github.com/ianwalter/boyscout",
   "main": "index.html",
   "authors": [
@@ -15,8 +23,5 @@
     "package.json",
     "examples"
   ],
-  "dependencies": {},
-  "resolutions": {
-    "angular": ">=1.2.0"
-  }
+  "dependencies": {}
 }
