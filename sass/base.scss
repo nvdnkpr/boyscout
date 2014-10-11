@@ -5,6 +5,9 @@
 @import 'vendor/neat/neat';
 @import 'vendor/bitters/bitters';
 
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);
+
 // Type
 @import 'type/alignment';
 @import 'type/case';
@@ -14,6 +17,9 @@
 @import 'type/size';
 @import 'type/underline';
 @import 'type/weight';
+
+// Background
+@import 'background/color';
 
 // Layout
 @import 'layout/display';
@@ -32,3 +38,4 @@
 @import 'component/list';
 @import 'component/panel';
 @import 'component/breadcrumbs';
+//@import 'component/code';

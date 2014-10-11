@@ -22,7 +22,6 @@ gulp.task('css', function() {
     .pipe(sass(options))
     .pipe(gulp.dest('dist'));
   if (!debug) {
-    console.log('test');
     cssTask.pipe(minifyCSS());
   }
   cssTask

@@ -1,3 +1,10 @@
-.helvetica-neue {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-helvetica-neue: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-monospace: monospace, serif;
+
+.font-helvetica-neue {
+  font-family: $font-family-helvetica-neue;
+}
+
+.font-monospace {
+  font-family: $font-family-monospace;
 }
