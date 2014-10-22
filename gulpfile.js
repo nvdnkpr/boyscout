@@ -16,7 +16,7 @@ gulp.task('css', function() {
   var cssTask = gulp.src(
     [
       'sass/base.scss',
-      'sass/theme/painting/styles.scss'
+      'sass/theme/painting/style.scss'
     ],
     { base: 'sass' })
     .pipe(sass(options))
