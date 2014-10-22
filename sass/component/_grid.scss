@@ -1,6 +1,7 @@
 $breakpoint-1660: new-breakpoint(max-width 1660px 12);
 $breakpoint-1440: new-breakpoint(max-width 1440px 12);
 $breakpoint-1280: new-breakpoint(max-width 1280px 12);
+$breakpoint-1140: new-breakpoint(max-width 1140px 12);
 $breakpoint-1024: new-breakpoint(max-width 1024px 12);
 $breakpoint-768: new-breakpoint(max-width 768px 8);
 $breakpoint-480: new-breakpoint(max-width 480px 4);
@@ -8,6 +9,13 @@ $breakpoint-480: new-breakpoint(max-width 480px 4);
 .section,
 section {
   @include outer-container;
+
+  &#container {
+    @include media($breakpoint-1140) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
 }
 
 .span-0-5 {
