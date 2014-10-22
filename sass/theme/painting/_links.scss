@@ -1,13 +1,14 @@
-a {
+a,
+a:visited {
   color: $blue;
 }
 a:hover {
   color: $black;
 }
-a.underline-blue:hover {
+a.underline:hover {
   @include underline($black);
 }
-a.underline-blue:active {
+a.underline:active {
   color: $alizarin;
   @include underline($alizarin);
 }

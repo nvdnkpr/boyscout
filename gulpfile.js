@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 gulp.task('css', function() {
   var options = {
     errLogToConsole: true,
-    sourceComments: 'map'
+    sourceComments: 'map',
+    includePaths: require('node-neat').includePaths
   };
   if (debug) {
     options.outputStyle = 'expanded';

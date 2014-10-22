@@ -1,7 +1,7 @@
 @import '../color';
 
-@mixin underline($color: $blue, $line-offset: 1.1999, $line-size: 0.14999) {
-  @include linear-gradient(top, transparent 50%, $color 50%);
+@mixin underline($color: $blue, $line-offset: 1.2, $line-size: 0.15) {
+  @include linear-gradient(top, transparent 60%, $color 40%);
   background-repeat: repeat-x;
   background-size: #{$line-size}rem #{$line-size}rem;
   background-position: 0 #{$line-offset}rem !important;
@@ -131,4 +131,19 @@
 }
 .underline-white {
   @include underline($white);
+}
+
+.color-peter-river .underline,
+.color-peter-river.underline {
+  @include underline($peter-river);
+}
+
+.font-size-1-2 [class^="underline"],
+.font-size-1-2[class^="underline"],
+.font-size-1-2 [class*=" underline"],
+.font-size-1-2[class*=" underline"] {
+  background-position: 0 1.45rem !important;
+  &:hover {
+    background-position: 0 1.45rem !important;
+  }
 }
