@@ -1,4 +1,7 @@
 // Top
+.margin-top-0 {
+  margin-top: 0;
+}
 .margin-top-5 {
   margin-top: 5px;
 }
@@ -19,6 +22,9 @@
 }
 
 // Right
+.margin-right-0 {
+  margin-right: 0;
+}
 .margin-right-5 {
   margin-right: 5px;
 }
@@ -39,6 +45,9 @@
 }
 
 // Bottom
+.margin-bottom-0 {
+  margin-bottom: 0;
+}
 .margin-bottom-5 {
   margin-bottom: 5px;
 }
@@ -59,6 +68,9 @@
 }
 
 // Left
+.margin-left-0 {
+  margin-left: 0;
+}
 .margin-left-5 {
   margin-left: 5px;
 }
@@ -79,6 +91,10 @@
 }
 
 // Top and Bottom
+.margin-vertical-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .margin-vertical-5 {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -105,6 +121,10 @@
 }
 
 // Top and Bottom
+.margin-horizontal-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
 .margin-horizontal-5 {
   margin-left: 5px;
   margin-right: 5px;
@@ -131,6 +151,9 @@
 }
 
 // All sides
+.margin-0 {
+  margin: 0;
+}
 .margin-5 {
   margin: 5px;
 }

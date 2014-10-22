@@ -106,7 +106,6 @@ section#container {
 }
 
 .table-row {
-  @include span-columns(12);
   @include row(table);
 
   .cell-0-5 {
