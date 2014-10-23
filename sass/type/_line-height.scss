@@ -1,18 +1,11 @@
-.line-height-1 {
-  line-height: 1rem;
-}
-.line-height-1-2 {
-  line-height: 1.2rem;
-}
-.line-height-1-4 {
-  line-height: 1.4rem;
-}
-.line-height-1-6 {
-  line-height: 1.6rem;
-}
-.line-height-1-8 {
-  line-height: 1.8rem;
-}
-.line-height-2 {
-  line-height: 2rem;
+@import 'size';
+
+@each $font-size in $font-sizes {
+  // Damn libsass doesn't support multiple assignment
+  $name: nth($font-size, 1);
+  $value: nth($font-size, 2);
+
+  .line-height-#{$name} {
+    line-height: $value;
+  }
 }

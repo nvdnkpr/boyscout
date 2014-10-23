@@ -5,10 +5,8 @@
   $name: nth($color, 1);
   $value: nth($color, 2);
 
-  .color-#{$name}-hover:hover,
-  a.color-#{$name},
-  a.color-#{$name}:visited,
-  .color-#{$name} {
+  .border-#{$name}-hover:hover,
+  .border-#{$name} {
     color: $value;
   }
 }

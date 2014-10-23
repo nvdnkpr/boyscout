@@ -5,9 +5,11 @@ a:visited {
 a:hover {
   color: $black;
 }
+a:hover .underline,
 a.underline:hover {
   @include underline($black);
 }
+a:active .underline,
 a.underline:active {
   color: $alizarin;
   @include underline($alizarin);

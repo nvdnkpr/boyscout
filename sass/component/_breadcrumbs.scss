@@ -3,18 +3,16 @@
   height: 40px;
   border-radius: 3px;
 }
-.breadcrumbs .crumb {
+.breadcrumbs a {
   background-color: $silver;
   float: left;
   padding: 8px 12px 8px 30px;
   margin-right: 15px;
   text-transform: underline;
-  &:after {
+
+  & span:after {
     position: absolute;
-    background-color: transparent;
     content: "";
-    width: 0;
-    height: 0;
     margin-left: 12px;
     margin-top: -8px;
     border-top: 20px solid transparent;
@@ -25,8 +23,6 @@
     position: absolute;
     background-color: $white;
     content: "";
-    width: 0;
-    height: 0;
     margin-left: -30px;
     margin-top: -8px;
     border-top: 20px solid $silver;
@@ -66,7 +62,7 @@
       border-top: 20px solid $silver-sand;
       border-bottom: 20px solid $silver-sand;
     }
-    &:after {
+    & span:after {
       transition: border-color 0.1s linear;
       border-left: 15px solid $silver-sand;
     }
@@ -77,6 +73,10 @@
         border-top: 20px solid $gallery;
         border-bottom: 20px solid $gallery;
       }
+    }
+
+    .underline {
+
     }
   }
 }
