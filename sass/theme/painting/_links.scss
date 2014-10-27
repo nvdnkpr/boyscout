@@ -14,3 +14,8 @@ a.underline:active {
   color: $alizarin;
   @include underline($alizarin);
 }
+
+a.button:active,
+.button:active {
+  background-color: $alizarin !important;
+}
