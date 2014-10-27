@@ -6,11 +6,12 @@ a.button:visited,
   cursor: pointer;
   background-color: $belize-hole;
   border-radius: 3px;
-  color: white;
+  color: $white;
   padding: 10px 15px;
 }
 
 a.button:hover,
 .button:hover {
+  color: $white;
   background-color: $peter-river;
 }
