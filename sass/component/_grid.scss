@@ -1,10 +1,10 @@
-$breakpoint-1660: new-breakpoint(max-width 1660px 12);
-$breakpoint-1440: new-breakpoint(max-width 1440px 12);
-$breakpoint-1280: new-breakpoint(max-width 1280px 12);
-$breakpoint-1140: new-breakpoint(max-width 1140px 12);
-$breakpoint-1024: new-breakpoint(max-width 1024px 12);
-$breakpoint-768: new-breakpoint(max-width 768px 8);
-$breakpoint-480: new-breakpoint(max-width 480px 4);
+$breakpoint-1660: new-breakpoint(max-width 1660px);
+$breakpoint-1440: new-breakpoint(max-width 1440px);
+$breakpoint-1280: new-breakpoint(max-width 1280px);
+$breakpoint-1140: new-breakpoint(max-width 1140px);
+$breakpoint-1024: new-breakpoint(max-width 1024px);
+$breakpoint-768: new-breakpoint(max-width 768px);
+$breakpoint-480: new-breakpoint(max-width 480px);
 
 $breakpoints: ('xxl', $breakpoint-1660),
               ('xl', $breakpoint-1440),
@@ -54,7 +54,7 @@ section {
   }
 }
 
-@each $column in $columns {
+@each $column in $cells {
   // Damn libsass doesn't support multiple assignment
   $name: nth($column, 1);
   $value: nth($column, 2);
@@ -65,25 +65,32 @@ section {
   .offset-#{$name} {
     @include shift($value);
   }
+}
 
-  @each $breakpoint in $breakpoints {
-    $breakpoint-name: nth($breakpoint, 1);
-    $breakpoint-value: nth($breakpoint, 2);
+@each $breakpoint in $breakpoints {
+  $breakpoint-name: nth($breakpoint, 1);
+  $breakpoint-value: nth($breakpoint, 2);
 
-    .#{$breakpoint-name}-span-#{$name} {
-      @include media($breakpoint-value) {
-        @include span-columns($value);
+  @include media($breakpoint-value) {
+
+    @each $column in $cells {
+      // Damn libsass doesn't support multiple assignment
+      $name: nth($column, 1);
+      $value: nth($column, 2);
+
+      .#{$breakpoint-name}-span-#{$name} {
+          @include span-columns($value);
       }
     }
   }
 }
 
-@each $column in $cells {
-  $name: nth($column, 1);
-  $value: nth($column, 2);
+.table-row {
+  @include row(table);
 
-  .table-row {
-    @include row(table);
+  @each $column in $cells {
+    $name: nth($column, 1);
+    $value: nth($column, 2);
 
     .cell-#{$name} {
       @include span-columns($value);
