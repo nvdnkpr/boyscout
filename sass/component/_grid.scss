@@ -72,6 +72,12 @@ section {
   $breakpoint-value: nth($breakpoint, 2);
 
   @include media($breakpoint-value) {
+    .#{$breakpoint-name}-hidden {
+      display: none;
+    }
+    .#{$breakpoint-name}-block {
+      display: block;
+    }
 
     @each $column in $cells {
       // Damn libsass doesn't support multiple assignment
