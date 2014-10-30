@@ -73,10 +73,10 @@ section {
 
   @include media($breakpoint-value) {
     .#{$breakpoint-name}-hidden {
-      display: none;
+      display: none !important;
     }
     .#{$breakpoint-name}-block {
-      display: block;
+      display: block !important;
     }
     .#{$breakpoint-name}-offset-0 {
       @include shift(0);
