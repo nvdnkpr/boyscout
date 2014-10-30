@@ -46,7 +46,7 @@ $cells: $columns;
 section {
   @include outer-container;
 
-  &#container {
+  &.container {
     @include media($breakpoint-1140) {
       margin-left: 20px;
       margin-right: 20px;
@@ -86,6 +86,9 @@ section {
 
       .#{$breakpoint-name}-span-#{$name} {
           @include span-columns($value);
+      }
+      .#{$breakpoint-name}-offset-#{$name} {
+        @include shift($value);
       }
     }
   }
