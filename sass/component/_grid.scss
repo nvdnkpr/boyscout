@@ -78,6 +78,9 @@ section {
     .#{$breakpoint-name}-block {
       display: block;
     }
+    .#{$breakpoint-name}-offset-0 {
+      @include shift(0);
+    }
 
     @each $column in $cells {
       // Damn libsass doesn't support multiple assignment
