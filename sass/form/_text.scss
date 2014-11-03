@@ -1,13 +1,14 @@
 @import '../color.scss';
 
 .input-text {
+  color: $black;
   border-radius: 3px;
   padding: 0.3em 0.4em;
-  font-size: 1em;
-  border: 1px solid $concrete;
+  border: 2px solid $clouds;
 
   &:focus {
+    color: $blue;
     outline: none;
-    border-color: $peter-river;
+    border-color: $blue;
   }
 }

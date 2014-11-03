@@ -1,9 +1,7 @@
 // Vendor
 @import 'normalize';
 @import 'bourbon';
-@import 'vendor/bitters/grid-settings';
 @import 'neat';
-@import 'vendor/bitters/bitters';
 
 // Type
 @import 'type/alignment';
@@ -14,6 +12,8 @@
 @import 'type/size';
 @import 'type/underline';
 @import 'type/weight';
+@import 'type/heading';
+@import 'type/body';
 
 // Background
 @import 'background/color';
@@ -30,6 +30,7 @@
 
 // Form
 @import 'form/text';
+@import 'form/label';
 
 // Component
 @import 'component/grid';

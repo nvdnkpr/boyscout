@@ -3,9 +3,10 @@
 a.button,
 a.button:visited,
 .button {
+  border: 0;
   display: inline-block;
   cursor: pointer;
-  background-color: $belize-hole;
+  background-color: $blue;
   border-radius: 3px;
   color: $white;
   padding: 10px 15px;
@@ -17,5 +18,5 @@ a.button:visited,
 a.button:hover,
 .button:hover {
   color: $white;
-  background-color: $peter-river;
+  background-color: $black;
 }
