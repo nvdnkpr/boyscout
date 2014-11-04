@@ -1,15 +1,24 @@
-// Default lists
-.default-ol {
-  @extend %default-ol;
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-.default-ul {
-  @extend %default-ul;
+
+.vertical-list {
+  li + li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &.united {
+    li + li {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .horizontal-list {
-  padding-left: 0;
-  margin: 0;
-
   li {
     margin: 0;
     display: inline;

@@ -13,10 +13,13 @@ a.button:visited,
   vertical-align: middle;
   text-align: center;
   white-space: nowrap;
-}
 
-a.button:hover,
-.button:hover {
-  color: $white;
-  background-color: $black;
+  &[disabled] {
+    background-color: $silver;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
 }
