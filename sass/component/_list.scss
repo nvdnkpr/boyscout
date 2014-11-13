@@ -1,10 +1,11 @@
 .list {
-  padding: 0;
-  margin: 0;
   list-style-type: none;
 }
 
 .vertical-list {
+  padding: 0;
+  margin: 0;
+
   li + li {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -18,19 +19,13 @@
   }
 }
 
-.horizontal-list {
-  li {
-    margin: 0;
-    display: inline;
-  }
+.horizontal-list li {
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
 
-  li + li {
-    margin-left: 10px;
-  }
-
-  &.united {
-    li + li {
-      margin-left: 0;
-    }
+  &+li {
+    margin-left: 0;
+    margin-right: 20px;
   }
 }

@@ -14,9 +14,14 @@
 @import 'type/weight';
 @import 'type/heading';
 @import 'type/body';
+@import 'type/overflow';
 
 // Background
 @import 'background/color';
+
+// Form
+@import 'form/text';
+@import 'form/label';
 
 // Layout
 @import 'layout/display';
@@ -28,10 +33,6 @@
 @import 'layout/height';
 @import 'layout/width';
 
-// Form
-@import 'form/text';
-@import 'form/label';
-
 // Component
 @import 'component/grid';
 @import 'component/list';
@@ -39,4 +40,5 @@
 @import 'component/breadcrumbs';
 @import 'component/border';
 @import 'component/button';
+@import 'component/horizontal-rule';
 //@import 'component/code';
