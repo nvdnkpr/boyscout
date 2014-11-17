@@ -5,10 +5,12 @@
   border-radius: 3px;
   padding: 0.3em 0.4em;
   border: 2px solid $clouds;
+  -webkit-appearance: none;
 
   &:focus {
     color: $blue;
     outline: none;
     border-color: $blue;
+    transition: border-color 0.1s linear;
   }
 }
