@@ -1,8 +1,8 @@
 {
   "name": "boyscout",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "A collection of helper CSS classes so you'll always be prepared.",
-  "main": "index.html",
+  "main": "sass/base.scss",
   "repository": {
     "type": "git",
     "url": "git://github.com/ianwalter/boyscout.git"
