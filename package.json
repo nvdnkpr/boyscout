@@ -1,6 +1,6 @@
 {
   "name": "boyscout",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A collection of helper CSS classes so you'll always be prepared.",
   "main": "sass/base.scss",
   "repository": {
