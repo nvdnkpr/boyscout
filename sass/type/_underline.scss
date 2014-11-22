@@ -1,6 +1,7 @@
 @import '../color';
+@import 'size';
 
-@mixin underline($color: $blue, $line-offset: 1.2, $line-size: 0.15) {
+@mixin underline($color: $dove-gray, $line-offset: 1.2, $line-size: 0.15) {
   @include linear-gradient(top, transparent 60%, $color 40%);
   background-repeat: repeat-x;
   background-size: #{$line-size}rem #{$line-size}rem;
@@ -21,20 +22,30 @@
   $name: nth($color, 1);
   $value: nth($color, 2);
 
-  .color-#{name} .underline,
-  .color-#{name}.underline,
+  .color-#{$name} .underline,
+  .color-#{$name}.underline,
   .underline-#{$name}-hover:hover,
   .underline-#{$name} {
     @include underline($value);
   }
 }
 
-.font-size-1-2 [class^="underline"],
-.font-size-1-2[class^="underline"],
-.font-size-1-2 [class*=" underline"],
-.font-size-1-2[class*=" underline"] {
-  background-position: 0 1.45rem !important;
-  &:hover {
-    background-position: 0 1.45rem !important;
+@each $size in $font-sizes {
+  $name: nth($size, 1);
+  $value: nth($size, 2);
+  $line-position: $value + ($value * 1/5);
+  $line-size: $value * 1/8;
+
+  .font-size-#{$name} [class^="underline"],
+  .font-size-#{$name}[class^="underline"],
+  .font-size-#{$name} [class*=" underline"],
+  .font-size-#{$name}[class*=" underline"] {
+    background-position: 0 #{$line-position} !important;
+    background-size: #{$line-size} #{$line-size};
+
+    &:hover {
+      background-position: 0 #{$line-position} !important;
+      background-size: #{$line-size} #{$line-size};
+    }
   }
 }

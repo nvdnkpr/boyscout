@@ -2,13 +2,20 @@ a,
 a:visited {
   text-decoration: none;
   color: $blue;
+
+  & .underline,
+  &.underline {
+    @include underline($blue);
+  }
 }
 a:hover {
   color: $black;
+  transition: color 0.1s linear;
 }
 a:hover .underline,
 a.underline:hover {
   @include underline($black);
+  transition: background-color 0.1s linear;
 }
 a:active .underline,
 a.underline:active {
