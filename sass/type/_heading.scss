@@ -1,3 +1,60 @@
+@import '../color';
+
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
+  display: inline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $mine-shaft;
+  font-weight: 400;
+  font-family: 'Bitter', serif;
+}
+h1 {
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  &.underline,
+  & .underline {
+    @include underline($black, 2.2, 0.3);
+  }
+}
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  &.underline,
+  & .underline {
+    @include underline($black, 1.8, 0.275);
+  }
+}
+h3 {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  &.underline,
+  & .underline {
+    @include underline($black, 1.55, 0.25);
+  }
+}
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  &.underline,
+  & .underline {
+    @include underline($black, 1.375, 0.22);
+  }
+}
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  &.underline,
+  & .underline {
+    @include underline($black, 1.225, 0.2);
+  }
+}
+h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  &.underline,
+  & .underline {
+    @include underline($black, 1.05, 0.18);
+  }
 }

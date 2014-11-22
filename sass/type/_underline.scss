@@ -34,7 +34,7 @@
   $name: nth($size, 1);
   $value: nth($size, 2);
   $line-position: $value + ($value * 1/5);
-  $line-size: $value * 1/8;
+  $line-size: $value * 1/6;
 
   .font-size-#{$name} [class^="underline"],
   .font-size-#{$name}[class^="underline"],
