@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,200,300,600,700|Bitter:400,200,300,600,700);
+
 // Vendor
 @import 'normalize';
 @import 'bourbon';
@@ -11,7 +13,6 @@
 @import 'type/line-height';
 @import 'type/size';
 @import 'type/underline';
-@import 'type/links';
 @import 'type/weight';
 @import 'type/heading';
 @import 'type/body';
@@ -43,3 +44,4 @@
 @import 'component/button';
 @import 'component/horizontal-rule';
 @import 'component/code';
+@import 'component/links';

@@ -15,10 +15,7 @@ gulp.task('css', function() {
     options.outputStyle = 'expanded';
   }
   var cssTask = gulp.src(
-    [
-      'sass/base.scss',
-      'sass/theme/painting/style.scss'
-    ],
+    [ 'sass/boyscout.scss' ],
     { base: 'sass' })
     .pipe(sass(options))
     .pipe(gulp.dest('dist'));

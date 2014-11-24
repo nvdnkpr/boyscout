@@ -36,6 +36,12 @@
   $line-position: $value + ($value * 1/5);
   $line-size: $value * 1/6;
 
+//  @if $name == '0-8' {
+//    small [class^="underline"],
+//    small[class^="underline"],
+//    small [class*=" underline"],
+//    small[class*=" underline"],
+//  }
   .font-size-#{$name} [class^="underline"],
   .font-size-#{$name}[class^="underline"],
   .font-size-#{$name} [class*=" underline"],
