@@ -78,6 +78,9 @@ section {
     .#{$breakpoint-name}-block {
       display: block !important;
     }
+    .#{$breakpoint-name}-table-cell {
+      display: table-cell !important;
+    }
     .#{$breakpoint-name}-offset-0 {
       @include shift(0);
     }
